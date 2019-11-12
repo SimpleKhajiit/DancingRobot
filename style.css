@@ -1,0 +1,277 @@
+.element {
+	animation: 2s pulse infinite;
+	animation-direction: alternate;
+
+}
+
+@keyframes pulse {
+	0% {
+    background-color: #582A72;
+  }
+  100% {
+    background-color: #AA3939;
+  }
+}
+
+
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color:white;
+}
+
+.robots {
+	display: flex; 
+	flex-direction: column;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #7A9F35;
+
+	 
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+	animation: head 1s infinite;
+	transition-timing-function: ease-in;
+/*	animation-direction: alternate;*/
+	animation-delay: 2s;
+	
+} 
+
+.eyes {
+	
+}
+
+/*.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}*/
+
+.upper_body { 
+	margin: 0 auto;
+	width: 300px; 
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+
+	
+
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px;
+	transform-origin: center top;
+	animation: armsM 3s infinite;
+	transition-timing-function: ease-in;
+	animation-delay: 3s;
+	
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+	
+} 
+
+
+
+
+@keyframes armsM {
+	10% {
+	-webkit-transform: translate(0, -15px);
+    -moz-transform: translate(0, -15px);
+    -o-transform: translate(0, -15px);
+    -ms-transform: translate(0, -15px);
+    transform: translate(-0, -15px);
+
+
+	}
+
+	20% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+	}
+
+	30% {
+	-webkit-transform: translate(0, -15px);
+    -moz-transform: translate(0, -15px);
+    -o-transform: translate(0, -15px);
+    -ms-transform: translate(0, -15px);
+    transform: translate(-0, -15px);
+	}
+	40% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+	}
+	50% {
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+	}
+	70% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+	}
+
+	}
+
+
+@keyframes head {
+	0%
+	{
+	-webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);	
+	}
+	30% {
+	-webkit-transform: translate(2px, 3px);
+    -moz-transform: translate(2px, 3px);
+    -o-transform: translate(2px, 3px);
+    -ms-transform: translate(2px, 3px);
+    transform: translate(2px, 3px);
+
+	}
+	40%
+	{
+	-webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);	
+	}
+
+	70% {
+	-webkit-transform: translate(-2px, -3px);
+    -moz-transform: translate(-2px, -3px);
+    -o-transform: translate(-2px, -3px);
+    -ms-transform: translate(-2px, -3px);
+    transform: translate(-2px, -3px);
+
+	}
+	
+	80%
+	{
+	-webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);	
+	}
+	
+
+}
+
+.right_arm { 
+	margin-left: 10px; 
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+
+} 
+
+
+.right_leg { 
+	margin-left: 30px;
+	animation: rleg 0.5s infinite; 
+
+
+}
+
+@keyframes rleg {
+	0% {
+	-webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -o-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+
+	}
+
+	
+	100% {
+    -webkit-transform: translate(0, -7px);
+    -moz-transform: translate(0, -7px);
+    -o-transform: translate(0, -7px);
+    -ms-transform: translate(0, -7px);
+    transform: translate(0, -7px);
+	}
+}
+
+
+
+
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 60px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 80px; 
+	left: 120px; 
+}
+
+
+
+
+
